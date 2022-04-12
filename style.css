@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    background-color: black;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+h1 {
+    color: white;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.loader-wrapper {
+    width: 60px;
+    height: 60px;
+
+}
+
+
+.loader {
+
+    width: 100%;
+    height: 100%;
+    border: 10px solid grey;
+    border-top-color: aqua;
+    border-bottom-color: greenyellow;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+}
+
+.loader-inner {
+    border-top-color: grey;
+    border-bottom-color: orange;
+}
+
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: rotate(-360deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+
+}
